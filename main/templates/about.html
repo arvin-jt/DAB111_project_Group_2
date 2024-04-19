@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>About</title>
-        
+        <link rel="stylesheet" href="/static/style.css" />
     </head>
     <body>
         <h1>About</h1>
@@ -13,37 +15,37 @@
             <li><a href="{{ url_for('data') }}">Data</a></li>
         </ul>
         <h2>Project Variables </h2>
-        <table>
-            <thead>
-                <tr><th>Variable Name</th><th>Data Type</th><th>Description</th></tr>
-            </thead>
-            <tbody>
-            <tr><td>title</td><td>String</td><td>Title of the Movie / Tv Show</td></tr>  
-            <tr><td>type</td><td>String</td><td>Identifier - A Movie or TV Show</td></tr> 
-            <tr><td>director</td><td>String</td><td>Director of the Movie</td></tr>   
-            <tr><td>date_added</td><td>DateTime</td><td>Date it was added on Netflix</td></tr>   
-            <tr><td>release_year</td><td>Integer</td><td>Actual Release year of the movie / show</td></tr>   
-            </tbody>
+        <table class="table">
+        <tr class="table__header">
+            <th class="table__cell">Variable</th>
+            <th class="table__cell">Data Type</th>
+            <th class="table__cell">Description</th>
+        </tr>
+            <tr class="table__row"></tr><td class="table__cell">title</td><td>String</td><td>Title of the Movie / Tv Show</td></tr>  
+            <tr class="table__row"></tr><td class="table__cell">type</td><td>String</td><td>Identifier - A Movie or TV Show</td></tr>
+            <tr class="table__row"></tr><td class="table__cell">director</td><td>String</td><td>Director of the Movie</td></tr>   
+            <tr class="table__row"></tr><td class="table__cell">date_added</td><td>DateTime</td><td>Date it was added on Netflix</td></tr>   
+            <tr class="table__row"></tr><td class="table__cell">release_year</td><td>Integer</td><td>Actual Release year of the movie / show</td></tr>   
         </table>
         <h2>All Variables</h2>
-        <table>
-            <thead>
-                <tr><th>Variable Name</th><th>Data Type</th><th>Description</th></tr>
-            </thead>
-            <tbody>
-                <tr><td>show_id</td><td>String</td><td>Unique ID for every Movie / Tv Show</td></tr>  
-                <tr><td>type</td><td>String</td><td>Identifier - A Movie or TV Show</td></tr>  
-                <tr><td>title</td><td>String</td><td>Title of the Movie / Tv Show</td></tr>  
-                <tr><td>director</td><td>String</td><td>Director of the Movie</td></tr>  
-                <tr><td>cast</td><td>String</td><td>Actors involved in the movie / show</td></tr>  
-                <tr><td>country</td><td>String</td><td>Country where the movie / show was produced</td></tr>  
-                <tr><td>date_added</td><td>DateTime</td><td>Date it was added on Netflix</td></tr>  
-                <tr><td>release_year</td><td>Integer</td><td>Actual Release year of the move / show</td></tr>  
-                <tr><td>rating</td><td>String</td><td>TV Rating of the movie / show</td></tr>  
-                <tr><td>duration</td><td>String</td><td>Total Duration - in minutes or number of seasons</td></tr>  
-                <tr><td>listed_in</td><td>String</td><td>Genere</td></tr>  
-                <tr><td>description</td><td>String</td><td>The summary description</td></tr>  
-            </tbody>
+        <table class="table">
+            <tr class="table__header">
+                <th class="table__cell">Variable</th>
+                <th class="table__cell">Data Type</th>
+                <th class="table__cell">Description</th>
+            </tr>
+                <tr class="table__row"></tr><td class="table__cell">show_id</td><td>String</td><td>Unique ID for every Movie / Tv Show</td></tr>  
+                <tr class="table__row"></tr><td class="table__cell">type</td><td>String</td><td>Identifier - A Movie or TV Show</td></tr>  
+                <tr class="table__row"></tr><td class="table__cell">title</td><td>String</td><td>Title of the Movie / Tv Show</td></tr>  
+                <tr class="table__row"></tr><td class="table__cell">director</td><td>String</td><td>Director of the Movie</td></tr>  
+                <tr class="table__row"></tr><td class="table__cell">cast</td><td>String</td><td>Actors involved in the movie / show</td></tr>  
+                <tr class="table__row"></tr><td class="table__cell">country</td><td>String</td><td>Country where the movie / show was produced</td></tr>  
+                <tr class="table__row"></tr><td class="table__cell">date_added</td><td>DateTime</td><td>Date it was added on Netflix</td></tr>  
+                <tr class="table__row"></tr><td class="table__cell">release_year</td><td>Integer</td><td>Actual Release year of the move / show</td></tr>  
+                <tr class="table__row"></tr><td class="table__cell">rating</td><td>String</td><td>TV Rating of the movie / show</td></tr>  
+                <tr class="table__row"></tr><td class="table__cell">duration</td><td>String</td><td>Total Duration - in minutes or number of seasons</td></tr>  
+                <tr class="table__row"></tr><td class="table__cell">listed_in</td><td>String</td><td>Genere</td></tr>  
+                <tr class="table__row"></tr><td class="table__cell">description</td><td>String</td><td>The summary description</td></tr>  
         </table>
     </body>
 </html>

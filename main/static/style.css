@@ -1,0 +1,18 @@
+.table{
+    border-spacing: 0;
+    margin: 1rem;
+    background-color: white;
+}
+
+.table__row{
+    background-color: white;
+}
+
+.table__header {
+    text-align: left;
+}
+
+.table__cell {
+    padding: 4px;
+    border-spacing: 5px;
+}
