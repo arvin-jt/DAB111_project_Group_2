@@ -1,5 +1,5 @@
 # DAB111_project_Group_2
-The files Project repository for DAB111 project.
+The files in this repository serves as our final output for the Project completion in DAB111.
 
 ## Installation
 

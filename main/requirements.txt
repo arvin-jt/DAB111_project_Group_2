@@ -1,0 +1,4 @@
+pandas
+pathlib
+flask
+sqlite3

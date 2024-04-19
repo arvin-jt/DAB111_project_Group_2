@@ -2,12 +2,14 @@
 <html>
     <head>
         <title>Data</title>
-        
     </head>
     <body>
-        <h1>Netflix Shows</h1>
-    <body>
+        <h1>Data</h1>
+        <p>Navigate pages:</p>
+        <li><a href="{{ url_for('index') }}">Home</a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>
         <table>
+            <h2>Netflix Shows</h2>
             <thead>
                 <tr><th>Title</th><th>Type</th><th>Director</th><th>Date Added</th><th>Release Year</th></tr>
             </thead>

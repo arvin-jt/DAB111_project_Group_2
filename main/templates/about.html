@@ -6,11 +6,44 @@
     </head>
     <body>
         <h1>About</h1>
-        <p>Details about the data:</p>
+        <p>Navigate pages:</p>
         <ul>
             <li><a href="https://www.kaggle.com/datasets/shivamb/netflix-shows/data?select=netflix_titles.csv">Link To Data Source</a></li>
             <li><a href="{{ url_for('index') }}">Home</a></li>
-            <li>List of Variables </li>
+            <li><a href="{{ url_for('data') }}">Data</a></li>
         </ul>
+        <h2>Project Variables </h2>
+        <table>
+            <thead>
+                <tr><th>Variable Name</th><th>Data Type</th><th>Description</th></tr>
+            </thead>
+            <tbody>
+            <tr><td>title</td><td>String</td><td>Title of the Movie / Tv Show</td></tr>  
+            <tr><td>type</td><td>String</td><td>Identifier - A Movie or TV Show</td></tr> 
+            <tr><td>director</td><td>String</td><td>Director of the Movie</td></tr>   
+            <tr><td>date_added</td><td>DateTime</td><td>Date it was added on Netflix</td></tr>   
+            <tr><td>release_year</td><td>Integer</td><td>Actual Release year of the movie / show</td></tr>   
+            </tbody>
+        </table>
+        <h2>All Variables</h2>
+        <table>
+            <thead>
+                <tr><th>Variable Name</th><th>Data Type</th><th>Description</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>show_id</td><td>String</td><td>Unique ID for every Movie / Tv Show</td></tr>  
+                <tr><td>type</td><td>String</td><td>Identifier - A Movie or TV Show</td></tr>  
+                <tr><td>title</td><td>String</td><td>Title of the Movie / Tv Show</td></tr>  
+                <tr><td>director</td><td>String</td><td>Director of the Movie</td></tr>  
+                <tr><td>cast</td><td>String</td><td>Actors involved in the movie / show</td></tr>  
+                <tr><td>country</td><td>String</td><td>Country where the movie / show was produced</td></tr>  
+                <tr><td>date_added</td><td>DateTime</td><td>Date it was added on Netflix</td></tr>  
+                <tr><td>release_year</td><td>Integer</td><td>Actual Release year of the move / show</td></tr>  
+                <tr><td>rating</td><td>String</td><td>TV Rating of the movie / show</td></tr>  
+                <tr><td>duration</td><td>String</td><td>Total Duration - in minutes or number of seasons</td></tr>  
+                <tr><td>listed_in</td><td>String</td><td>Genere</td></tr>  
+                <tr><td>description</td><td>String</td><td>The summary description</td></tr>  
+            </tbody>
+        </table>
     </body>
 </html>
