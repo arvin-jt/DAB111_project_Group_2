@@ -5,10 +5,18 @@
         
     </head>
     <body>
-        <h1>Display data below:</h1>
-        <p>data table...</p>
-        <ul>
-            <li><a href="{{ url_for('index') }}">Home</a></li>
-        </ul>
+        <h1>Netflix Shows</h1>
+    <body>
+        <table>
+            <thead>
+                <tr><th>Title</th><th>Type</th><th>Director</th><th>Date Added</th><th>Release Year</th></tr>
+            </thead>
+            <tbody>
+                {% for t in titles%}
+            <tr><td>{{ t[2] }}</td><td>{{ t[1] }}</td><td>{{ t[3] }}</td><td>{{ t[6] }}</td><td>{{ t[7] }}</td></tr>
+                {% endfor %}    
+            </tbody>
+        </table>
     </body>
 </html>
+

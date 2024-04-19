@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-import pathlib
+from functions import queries
 
 app = Flask(__name__)
 
@@ -13,7 +13,9 @@ def about():
 
 @app.route("/data")
 def data():
-    return render_template("data.html")
+    db_path = queries.directory()
+    results = queries.db_selectAll(db_path)
+    return render_template("data.html", titles=results)
 
 if __name__=="__main__":
     app.run(debug=True)
